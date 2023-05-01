@@ -59,3 +59,38 @@ nav ul li a:hover {
     color: rgb(232, 22, 22);
     text-shadow: 0 0 4px #000;
 }
+
+.principal {
+     background: #ff6900;
+     padding: 30px;
+     color: #f3f3f3;   
+}
+
+section h2 {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.sobre-nos{
+    background: #ffffff;
+    padding: 20px;
+}
+
+.beneficios {
+    padding: 20px;
+}
+
+.conteudo-quem-somos {
+    background: #FFFFFF;
+	padding: 20px;
+    display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	margin-right: 15%;
+    margin-top: 150px;
+}
+
+.img-quem-somos {
+    right: 150%;
+    padding: 0px;
+}
