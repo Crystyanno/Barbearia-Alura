@@ -11,7 +11,7 @@ header {
 }
 
 .header_background  {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(header_index.jpg);
+  
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
