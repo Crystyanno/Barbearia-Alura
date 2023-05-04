@@ -1,25 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
-header {
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    background: #111;
+    color: #eee;
+    border-radius: 5px;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #000;
+}
+
+.headline {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+    letter-spacing: 2px;
+}
+
+/*-- NavBAr --*/
+
+#navbar {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
+    background: #111;
+    columns: #eee;
+    height: 80px;
 }
 
-.header_background  {
-  
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    box-shadow: 0 0 20px;
-}
-
-nav {
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
 }
 
 .logo {
@@ -29,68 +65,159 @@ nav {
     height: auto;
 }
 
-nav ul {
-    float: left;
-    width: 78%;
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
 }
 
-nav ul li {
-    font-family: 'Quicksand', sans-serif;
-    display: inline-block;
-    font-size: 1.7em;
-    margin-right: 2.5em;
-    margin-top: 1.2em;
-    color: #ffffff;
+#navbar-items li {
+    padding: 10px;
 }
 
-nav ul li:first-child {
-    margin-left: 15%;
+/*-- mostruário --*/
+
+#mostruario {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+
+    /*-- Sobreposição --*/
+
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #f3f3f3;
-    font-weight: bold;
-    text-shadow: 2px 2px 3px #000;
-}
-
-nav ul li a:hover {
-    transition: 1s;
-    color: rgb(232, 22, 22);
-    text-shadow: 0 0 4px #000;
-}
-
-.principal {
-     background: #ff6900;
-     padding: 30px;
-     color: #f3f3f3;   
-}
-
-section h2 {
-    padding-left: 20px;
+#mostruario-cantainer {
     text-align: center;
 }
 
-.sobre-nos{
-    background: #ffffff;
-    padding: 20px;
+#mostruario-cantainer h2 {
+    font-size: 2.5rem;
 }
 
-.beneficios {
-    padding: 20px;
+#mostruario-cantainer p {
+    font-size: 1.2rem;
+    padding: 7px 0;
 }
 
-.conteudo-quem-somos {
-    background: #FFFFFF;
-	padding: 20px;
+/*-- Nossos Serviços --*/
+
+#servicos {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+#servicos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.servicos-imagem {
     display: inline-block;
-	vertical-align: top;
-	width: 30%;
-	margin-right: 15%;
-    margin-top: 150px;
+    width: 540px;
+    height: 360px;
+    border-radius: 1px;
 }
 
-.img-quem-somos {
-    right: 150%;
-    padding: 0px;
+
+
+/*-- Abaut --*/
+
+#caracteristicas {
+    width: 100%;
+    background-color: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#caracteristicas-container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0%;
+}
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.caracteristicas-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*-- O que Acham de nós --*/
+
+.depoimentos {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#depoimentos {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#depoimentos-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.depoimentos .depoimentos-imagem {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+/*-- Confira o nosso trabalho --*/
+
+#trabalhos {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+#trabalhos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.trabalhos-imagem {
+    display: inline-block;
+    width: 540px;
+    height: 360px;
+    border-radius: 1px;
+}
+
+/*-- Rodapé --*/
+
+#footer {
+    background: #222;
+    color: #eee;
+    padding: 30px;
+    text-align: center;
 }
