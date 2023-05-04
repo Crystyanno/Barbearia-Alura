@@ -12,6 +12,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .btn {
@@ -31,7 +32,7 @@ a {
 }
 
 .headline {
-    font-size: 2.2em;
+    font-size: 2.2rem;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -46,6 +47,7 @@ a {
     background: #111;
     columns: #eee;
     height: 80px;
+    position: fixed;
 }
 
 #navbar-container {
@@ -83,6 +85,7 @@ a {
     justify-content: center;
     align-items: center;
     color: #eee;
+    background-image: url('/img/Banner/home.jpg') no-repeat center center/cover;
 
     /*-- Sobreposição --*/
 
@@ -211,6 +214,21 @@ a {
     width: 540px;
     height: 360px;
     border-radius: 1px;
+}
+
+.mapa {
+	padding: 2rem 0;
+	background: linear-gradient(#eee, #888);
+}
+
+.mapa-container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.mapa p, h2 {
+	margin: 0 0 2rem;
+	text-align: center;
 }
 
 /*-- Rodapé --*/
