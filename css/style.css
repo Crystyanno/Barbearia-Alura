@@ -2,7 +2,6 @@
 /*
 Resete no body
 */
-
 body, ul, li, p{
 	margin: 0px;
 	padding: 0px;
@@ -34,7 +33,7 @@ a {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	padding: 10px;
 }
 
 .menu {
@@ -42,12 +41,12 @@ a {
 }
 
 .menu li {
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 menu li a {
 	display: block;
-	padding: 10px;
+	padding: 20px;
 }
 
 .banner {
@@ -63,10 +62,43 @@ menu li a {
     letter-spacing: 2px;
 }
 
-/*-- Rodapé --*/
+.escolha-estilo {
+	width: 100%;
+	background-color: #EC8C08;
+	color: #eee;
+}
 
+.quemsomos p {
+	margin: 10px;
+	color: black;
+	text-align: justify;
+}
+
+/*-- Nossos Serviços 
+#servicos {
+	width: 100%;
+	background: #eee;
+	color: #eee;
+	padding: 50px;
+}
+
+#servicos-container {
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-column-gap: 5px;
+}
+
+.servicos {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	border-radius: 10px;
+}
+--*/
+/*-- Rodapé --*/
 #footer {
-    background: #222;
+    background: #EC8C08;
     color: #eee;
     padding: 30px;
     text-align: center;
