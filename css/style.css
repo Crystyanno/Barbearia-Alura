@@ -70,6 +70,11 @@ menu li a {
 	color: #eee;
 }
 
+#quemsomos {
+	background-color: #f3f3f3f3;
+	width: 100%;
+}
+
 .quemsomos p {
 	margin: 10px;
 	color: black;
@@ -123,6 +128,22 @@ menu li a {
 	font-weight: bold;
 	margin-top: 10px;
 	color: #000000;
+}
+
+#contato {
+	background-color: #f3f3f3f3;
+	padding:  0 10rem 0 10rem;
+	width: 84rem;
+	height: auto;
+}
+
+.contato {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	align-items: center;
 }
 
 /*-- Rodapé --*/
