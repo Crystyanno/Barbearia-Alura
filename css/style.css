@@ -2,6 +2,13 @@
 /*
 Resete no body
 */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body, ul, li, p{
 	margin: 0px;
 	padding: 0px;
@@ -81,71 +88,131 @@ menu li a {
 	text-align: justify;
 }
 
-/*-- Nossos Serviços --*/
-.servicos {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 50px 0;
+/*-- Clentes --*/
+#clientes {
+	width: 100%;
+	background: #eee;
+	color: #111;
+	padding: 50px;
 }
 
-.servicos li {
+#clientes-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	padding: 15px;
+}
+
+.clientes {
 	display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 10px;
+	width: 25%;
 }
 
-.servicos li:hover {
-	border-color: #C78C19;
+/*-- O que fazemos --*/
+#features {
+	width: 100%;
+	background: #222;
+	color: #eee;
+	padding: 50px;
 }
 
-.servicos li:active {
-	border-color: #088C19;	
+#features-container {
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 50px;
 }
 
-.servicos li:hover h2 {
-	font-size: 34px;
+.features {
+	display: flex;
+	flex-direction: column;
+	background: #333;
+	padding: 20px;
+	border-radius: 5px;
 }
 
-.servicos h2 {
-	font-size: 30px;
+.features-title {
+	font-size: 1.5rem;
 	font-weight: bold;
-	color: #000000;
 }
 
-.servicos-descricao {
-	font-size: 18px;
-	color: #000000;
+/*-- Nossos Produtos --*/
+#produtos {
+	width: 100%;
+	padding: 50px;
 }
 
-.servicos-preco {
-	font-size: 22px;
-	font-weight: bold;
-	margin-top: 10px;
-	color: #000000;
-}
-
-#contato {
-	background-color: #f3f3f3f3;
-	padding:  0 10rem 0 10rem;
-	width: 84rem;
-	height: auto;
-}
-
-.contato {
+#produtos-container {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
 	align-items: center;
 }
 
+#item {
+	width: 650px;
+}
+
+#item .item {
+	display: flex;
+	padding: 10px;
+	margin: 15px 0;
+	font-size: 1.2rem;
+}
+
+/*-- Testemunhos --*/
+#testemunhos {
+	width: 100%;
+	background: #222;
+	color: #eee;
+	padding: 50px;
+}
+
+.testemunhos {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	background: #333;
+	padding: 15px;
+	margin: 15px 0;
+	border-radius: 5px;
+}
+
+#testemunho-container {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.testemunhos-image {
+	height: 200px;
+	width: auto;
+	border-radius: 50%;
+	margin: 15px 0;
+}
+
+/*-- Galeria --*/
+#galeria {
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+}
+
+#Galeria-container {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 30px;
+	justify-items: center;
+}
+
+.galeria-image {
+	display: inline-block;
+	width: 380px;
+	height: 280px;
+	border-radius: 5px;
+}
 /*-- Rodapé --*/
 #footer {
     background: #EC8C08;
