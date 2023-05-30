@@ -213,6 +213,23 @@ menu li a {
 	height: 280px;
 	border-radius: 5px;
 }
+
+/*-- Contato --*/
+#contato {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	flex-wrap: wrap;
+	padding: 10px;
+	box-shadow: 0px 0px 10px 0px #666;
+}
+
+#contato-container {
+	width: 80%;
+	height: auto;
+	flex: 50%;
+}
+
 /*-- Rodapé --*/
 #footer {
     background: #EC8C08;
